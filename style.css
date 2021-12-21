@@ -1,0 +1,41 @@
+body {
+	background-image: url('./assets/images/flakes.jpg');
+	background-repeat: repeat;
+}
+
+#outer {
+	width: 90%;
+	border-radius: 35px;
+	padding: 30px;
+	margin: auto;
+	background: #57bd84;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#inner {
+	border: solid 2px darkslategray;
+	height: 600px;
+	width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img-tile {
+	flex-basis: 25%;
+	height: 33.33%;
+	background-size: contain;
+}
+
+.instruction {
+	margin: 20px;
+	padding: 15px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	background: darkslategray;
+	border-radius: 25px;
+}
