@@ -4,11 +4,8 @@ body {
 }
 
 #outer {
-	width: 90%;
-	border-radius: 35px;
 	padding: 30px;
 	margin: auto;
-	background: #57bd84;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,6 +16,8 @@ body {
 	border: solid 2px darkslategray;
 	width: 80vw;
 	height: 60vw;
+	max-width: 800px;
+	max-height: 600px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -29,7 +28,7 @@ body {
 	background-size: contain;
 }
 
-.instruction {
+.message {
 	margin: 20px;
 	padding: 15px;
 	border-radius: 25px;

@@ -7,6 +7,13 @@ const gameState = {
 	tileState: []
 };
 
+const congratulations = [
+	'Hooray, you did it!',
+	'HO! HO! HO! Well done.',
+	'Congratulations! You have solved the puzzle',
+	'Winner Winner Christmas Dinner!'
+];
+
 function rotate(element, deg) {
 	element.style.webkitTransform = 'rotate(' + deg + 'deg)';
 	element.style.mozTransform = 'rotate(' + deg + 'deg)';
@@ -20,7 +27,10 @@ function isGameOver() {
 }
 
 function endGame() {
-	alert('Merry Christmas');
+	let randomIndex = Math.floor((Math.random() * 10) % congratulations.length);
+	alert(congratulations[randomIndex]);
+	let msgDiv = document.querySelector('.message');
+	msgDiv.innerHTML = 'Wishing You And Your Loved Ones A Very Happy Christmas';
 }
 
 function init() {
